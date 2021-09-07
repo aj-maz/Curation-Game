@@ -94,33 +94,6 @@ contract Reputations {
         manager = _manager;
     }
 
-    function calculateReputationPoints(
-        uint256 currentReputationPoint,
-        bool isAligned
-    ) public pure returns (uint256) {
-        // isAligned shows wether curator
-        uint256 result;
-        if (isAligned) {
-            //
-            result = currentReputationPoint.mul(4);
-        } else {
-            // Wrong answers will decrease the reputation point so exponentialy
-            //if (currentReputationPoint <= 10) {
-            //    return 1;
-            //}
-            //result = currentReputationPoint.div(5);
-        }
-        if (result < 1) {
-            // Min of reputation points is 1
-            return 1;
-        }
-        if (result > 1000) {
-            // Max of reputation points is 1
-            return 1000;
-        }
-        return result;
-    }
-
     function sqrt(uint256 y) internal pure returns (uint256) {
         uint256 z;
         if (y > 3) {

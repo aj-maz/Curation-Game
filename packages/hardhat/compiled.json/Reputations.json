@@ -1,7 +1,6 @@
 [
   "function allowGrant(address _grant)",
   "function allowed(address) view returns (bool)",
-  "function calculateReputationPoints(uint256 currentReputationPoint, bool isAligned) pure returns (uint256)",
   "function getCurationWeight(address _curator) view returns (uint256)",
   "function getReputationPoint(address _curator) view returns (uint256)",
   "function reputations(address) view returns (uint256)",
