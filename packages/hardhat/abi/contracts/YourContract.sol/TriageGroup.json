@@ -1,0 +1,40 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_grant",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_curationHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_content",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_category",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_legit",
+        "type": "uint256"
+      }
+    ],
+    "name": "reviewGrant",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

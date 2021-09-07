@@ -1,0 +1,389 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_owner",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_grantHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_bountyAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "contract Reputations",
+        "name": "_reputation",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ERC20",
+        "name": "_gtc",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPOH",
+        "name": "_poh",
+        "type": "address"
+      },
+      {
+        "internalType": "contract TriageGroup",
+        "name": "_triageGroup",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_curationHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_content",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_category",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_legit",
+        "type": "uint256"
+      }
+    ],
+    "name": "addPeerReview",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "bountyAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "curator",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "curationHash",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "enum Grant.Results",
+            "name": "content",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum Grant.Results",
+            "name": "category",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum Grant.Results",
+            "name": "legit",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct Grant.Curation",
+        "name": "curation",
+        "type": "tuple"
+      }
+    ],
+    "name": "compileSingle",
+    "outputs": [
+      {
+        "internalType": "enum Grant.Results",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "confidence",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "curations",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "curator",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "curationHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "enum Grant.Results",
+        "name": "content",
+        "type": "uint8"
+      },
+      {
+        "internalType": "enum Grant.Results",
+        "name": "category",
+        "type": "uint8"
+      },
+      {
+        "internalType": "enum Grant.Results",
+        "name": "legit",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "curatorsShare",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_newHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "edit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "finalizeResult",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "grantHash",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "isPayedOut",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "makeJudgeable",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "result",
+    "outputs": [
+      {
+        "internalType": "enum Grant.Results",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "status",
+    "outputs": [
+      {
+        "internalType": "enum Grant.Statuses",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "takeBounty",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "totalShares",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_curationHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_content",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_category",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_legit",
+        "type": "uint256"
+      }
+    ],
+    "name": "triageReview",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "version",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "versionVoters",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,3 @@
+[
+  "function isRegistered(address _submissionID) view returns (bool)"
+]

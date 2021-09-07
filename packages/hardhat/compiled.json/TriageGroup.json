@@ -1,0 +1,3 @@
+[
+  "function reviewGrant(address _grant, string _curationHash, uint256 _content, uint256 _category, uint256 _legit)"
+]

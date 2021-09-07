@@ -1,0 +1,8 @@
+[
+  "event GrantCreated(string _grantHash, uint256 grantId)",
+  "function calculateStakeAndBounty() view returns (uint256)",
+  "function createGrant(string _grantHash)",
+  "function grants(uint256) view returns (address)",
+  "function grantsAmount() view returns (uint256)",
+  "function reputation() view returns (address)"
+]

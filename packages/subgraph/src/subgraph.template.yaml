@@ -1,0 +1,27 @@
+specVersion: 0.0.2
+schema:
+  file: ./src/schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: GTC
+    network: mainnet
+    source:
+      address: "{{localhost_GTCAddress}}"
+      abi: GTC
+      startBlock: 1
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - User
+        - Asset
+      abis:
+        - name: GTC
+          file: ./abis/localhost_GTC.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,uint256)
+          handler: handleApproval
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./src/gtc/events.ts

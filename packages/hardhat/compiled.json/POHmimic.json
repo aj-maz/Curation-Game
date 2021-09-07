@@ -1,0 +1,4 @@
+[
+  "function isRegistered(address _submissionID) view returns (bool)",
+  "function register(address _submissionId)"
+]

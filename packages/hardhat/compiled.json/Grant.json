@@ -1,0 +1,22 @@
+[
+  "function addPeerReview(string _curationHash, uint256 _content, uint256 _category, uint256 _legit)",
+  "function bountyAmount() view returns (uint256)",
+  "function compileSingle(tuple(address curator, string curationHash, uint8 content, uint8 category, uint8 legit) curation) pure returns (uint8)",
+  "function confidence() view returns (uint256)",
+  "function curations(uint256, uint256) view returns (address curator, string curationHash, uint8 content, uint8 category, uint8 legit)",
+  "function curatorsShare(address) view returns (uint256)",
+  "function currentVotesCounts() view returns (uint256)",
+  "function edit(string _newHash)",
+  "function finalizeResult()",
+  "function grantHash() view returns (string)",
+  "function isPayedOut(address) view returns (bool)",
+  "function makeJudgeable()",
+  "function owner() view returns (address)",
+  "function result() view returns (uint8)",
+  "function status() view returns (uint8)",
+  "function takeBounty()",
+  "function totalShares() view returns (uint256)",
+  "function triageReview(string _curationHash, uint256 _content, uint256 _category, uint256 _legit)",
+  "function version() view returns (uint256)",
+  "function versionVoters(uint256, address) view returns (bool)"
+]
