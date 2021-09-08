@@ -85,11 +85,18 @@ The confindence will be calculated whenever the status become **FINALIZED** and 
 
 The **compileSingle()** function is a pure function which will take a single curation and will return a single result based on specification.
 
+With this knowledge I guess reading other functions are pretty possible even tho I try to complete the docs more.
 
+**There are lots of comments in the contracts for possible improvments and critical points**
 
-# Video Demo
+## Frontend
 
-I'm a bit tired right now. going for a game and I will create the video in a bit
+The frontend is pretty straightforward. But just reminds:
+
+- This frontend is just one possible implementation of the smart contract system, which is decentralized and uses IPFS to store files. We can easily translate it to a more centralized system with verifiable hash and traditional API
+- For creating grant go to utility tab, the bottom form doesn't have proper validation. Please complete it fully to decrease the chance of unwanted behaviour.
+- For making a grant judgeable you need test gtc. You can grab some in utility tab.
+- For adding peer review you need to prove that you're a human using our POHMimic. You can use utility tab for that as well.
 
 
 # Features, Todos And Bugs
