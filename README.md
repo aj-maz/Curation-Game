@@ -98,6 +98,10 @@ The frontend is pretty straightforward. But just reminds:
 - For making a grant judgeable you need test gtc. You can grab some in utility tab.
 - For adding peer review you need to prove that you're a human using our POHMimic. You can use utility tab for that as well.
 
+# Video 
+
+[Demo](https://www.google.com)
+
 
 # Features, Todos And Bugs
 

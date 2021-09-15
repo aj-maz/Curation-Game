@@ -169,7 +169,7 @@ const Grants = ({ provider, chainId, address, userSigner, tx, mainnetProvider })
 
     useEffect(async () => {
         if (grantsLength > 1) {
-            let foo = Array(grantsLength).fill(0).map(async (v, i) => await (contract.grant(i)))
+            let foo = Array(Number(String(grantsLength))).fill(0).map(async (v, i) =>  await (contract.grants(i)))
             console.log(foo)
         }
     }, [grantsLength])
@@ -204,10 +204,11 @@ const Grants = ({ provider, chainId, address, userSigner, tx, mainnetProvider })
         </div>
     )
 
+
     return (
         <div style={{ padding: 16 }} >
             <Row>
-                {Array(grantsLength).fill(0).map((v, i) =>
+                {Array(Number(String(grantsLength))).fill(0).map((v, i) =>
                     <Col style={{marginBottom: '2em'}} span={6} key={i}>
                         <GrantCard key={i} mainnetProvider={mainnetProvider} grantId={i} provider={provider} chainId={chainId} userSigner={userSigner} />
                     </Col>
